@@ -6,17 +6,32 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		81C38AC42DDEA8DF008BDC67 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C38ABE2DDEA8DF008BDC67 /* Preview Assets.xcassets */; };
+		81C38AC52DDEA8DF008BDC67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C38AC02DDEA8DF008BDC67 /* Assets.xcassets */; };
+		81C38AC62DDEA8DF008BDC67 /* SoundBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38AC12DDEA8DF008BDC67 /* SoundBoardView.swift */; };
+		81C38AC72DDEA8DF008BDC67 /* SoundExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38AC22DDEA8DF008BDC67 /* SoundExampleApp.swift */; };
+		81C38ACC2DDEA94B008BDC67 /* SoundBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38ACB2DDEA946008BDC67 /* SoundBoardViewModel.swift */; };
+		81C38ACE2DDEAC97008BDC67 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38ACD2DDEAC94008BDC67 /* Sound.swift */; };
+		81C38AD12DDEACEC008BDC67 /* birds.wav in Resources */ = {isa = PBXBuildFile; fileRef = 81C38AD02DDEACEC008BDC67 /* birds.wav */; };
+		81C38AD32DDEB125008BDC67 /* paper-rip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 81C38AD22DDEB125008BDC67 /* paper-rip.wav */; };
+		81C38ADC2DDEB1C3008BDC67 /* cow-mooing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 81C38AD52DDEB1C3008BDC67 /* cow-mooing.mp3 */; };
+		81C38ADD2DDEB1C3008BDC67 /* cat-purring.wav in Resources */ = {isa = PBXBuildFile; fileRef = 81C38AD42DDEB1C3008BDC67 /* cat-purring.wav */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		81C38AAD2DDEA8D9008BDC67 /* SoundExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81C38ABE2DDEA8DF008BDC67 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		81C38AC02DDEA8DF008BDC67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81C38AC12DDEA8DF008BDC67 /* SoundBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBoardView.swift; sourceTree = "<group>"; };
+		81C38AC22DDEA8DF008BDC67 /* SoundExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundExampleApp.swift; sourceTree = "<group>"; };
+		81C38ACB2DDEA946008BDC67 /* SoundBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBoardViewModel.swift; sourceTree = "<group>"; };
+		81C38ACD2DDEAC94008BDC67 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		81C38AD02DDEACEC008BDC67 /* birds.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = birds.wav; sourceTree = "<group>"; };
+		81C38AD22DDEB125008BDC67 /* paper-rip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "paper-rip.wav"; sourceTree = "<group>"; };
+		81C38AD42DDEB1C3008BDC67 /* cat-purring.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "cat-purring.wav"; sourceTree = "<group>"; };
+		81C38AD52DDEB1C3008BDC67 /* cow-mooing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "cow-mooing.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		81C38AAF2DDEA8D9008BDC67 /* SoundExample */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SoundExample;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		81C38AAA2DDEA8D9008BDC67 /* Frameworks */ = {
@@ -32,7 +47,7 @@
 		81C38AA42DDEA8D9008BDC67 = {
 			isa = PBXGroup;
 			children = (
-				81C38AAF2DDEA8D9008BDC67 /* SoundExample */,
+				81C38AC32DDEA8DF008BDC67 /* SoundExample */,
 				81C38AAE2DDEA8D9008BDC67 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +58,63 @@
 				81C38AAD2DDEA8D9008BDC67 /* SoundExample.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		81C38ABF2DDEA8DF008BDC67 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				81C38ABE2DDEA8DF008BDC67 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		81C38AC32DDEA8DF008BDC67 /* SoundExample */ = {
+			isa = PBXGroup;
+			children = (
+				81C38AC22DDEA8DF008BDC67 /* SoundExampleApp.swift */,
+				81C38AC92DDEA926008BDC67 /* Model */,
+				81C38ACA2DDEA92D008BDC67 /* ViewModels */,
+				81C38AC82DDEA8E4008BDC67 /* Views */,
+				81C38ACF2DDEACCF008BDC67 /* Sounds */,
+				81C38ABF2DDEA8DF008BDC67 /* Preview Content */,
+				81C38AC02DDEA8DF008BDC67 /* Assets.xcassets */,
+			);
+			path = SoundExample;
+			sourceTree = "<group>";
+		};
+		81C38AC82DDEA8E4008BDC67 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81C38AC12DDEA8DF008BDC67 /* SoundBoardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		81C38AC92DDEA926008BDC67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81C38ACD2DDEAC94008BDC67 /* Sound.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		81C38ACA2DDEA92D008BDC67 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				81C38ACB2DDEA946008BDC67 /* SoundBoardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		81C38ACF2DDEACCF008BDC67 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				81C38AD42DDEB1C3008BDC67 /* cat-purring.wav */,
+				81C38AD52DDEB1C3008BDC67 /* cow-mooing.mp3 */,
+				81C38AD22DDEB125008BDC67 /* paper-rip.wav */,
+				81C38AD02DDEACEC008BDC67 /* birds.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +131,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				81C38AAF2DDEA8D9008BDC67 /* SoundExample */,
 			);
 			name = SoundExample;
 			packageProductDependencies = (
@@ -109,6 +178,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81C38ADC2DDEB1C3008BDC67 /* cow-mooing.mp3 in Resources */,
+				81C38ADD2DDEB1C3008BDC67 /* cat-purring.wav in Resources */,
+				81C38AC42DDEA8DF008BDC67 /* Preview Assets.xcassets in Resources */,
+				81C38AD32DDEB125008BDC67 /* paper-rip.wav in Resources */,
+				81C38AC52DDEA8DF008BDC67 /* Assets.xcassets in Resources */,
+				81C38AD12DDEACEC008BDC67 /* birds.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +194,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81C38ACC2DDEA94B008BDC67 /* SoundBoardViewModel.swift in Sources */,
+				81C38AC62DDEA8DF008BDC67 /* SoundBoardView.swift in Sources */,
+				81C38AC72DDEA8DF008BDC67 /* SoundExampleApp.swift in Sources */,
+				81C38ACE2DDEAC97008BDC67 /* Sound.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
