@@ -8,7 +8,7 @@
 import Foundation
 
 // Define a structure to describe a sound
-struct Sound: Identifiable {
+struct Sound: Identifiable, Equatable {
     
     // MARK: Stored properties
     let id = UUID()
@@ -46,4 +46,19 @@ let cow = Sound(
     name: "Cows Moo",
     description: "Some cows, doing cow things.",
     attributionText: "Cow Sounds Real Field Audio by DudeAwesome -- https://freesound.org/s/790277/ -- License: Attribution 4.0"
+)
+
+// Example loops
+let guitar = Sound(
+    filename: "jazzy-guitar.wav",
+    name: "Jazzy Guitar",
+    description: "A sweet jazzy guitar groove!",
+    attributionText: "Jazz Guitar Loop.wav by se2001 -- https://freesound.org/s/485389/ -- License: Creative Commons 0"
+)
+
+let piano = Sound(
+    filename: "piano-loop.wav",
+    name: "Fast Piano",
+    description: "Fun fast piano groove...",
+    attributionText: "Flügel Bigbeat 02 - 132.wav by Raggaman -- https://freesound.org/s/25486/ -- License: Attribution 3.0"
 )

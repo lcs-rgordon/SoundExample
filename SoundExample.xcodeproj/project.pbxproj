@@ -17,6 +17,9 @@
 		81C38AD32DDEB125008BDC67 /* paper-rip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 81C38AD22DDEB125008BDC67 /* paper-rip.wav */; };
 		81C38ADC2DDEB1C3008BDC67 /* cow-mooing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 81C38AD52DDEB1C3008BDC67 /* cow-mooing.mp3 */; };
 		81C38ADD2DDEB1C3008BDC67 /* cat-purring.wav in Resources */ = {isa = PBXBuildFile; fileRef = 81C38AD42DDEB1C3008BDC67 /* cat-purring.wav */; };
+		81C38AFC2DDFEC9F008BDC67 /* BackgroundAudioProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38AFB2DDFEC9F008BDC67 /* BackgroundAudioProvider.swift */; };
+		81C38AFF2DDFED0C008BDC67 /* jazzy-guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = 81C38AFE2DDFED0C008BDC67 /* jazzy-guitar.wav */; };
+		81C38B012DDFEE68008BDC67 /* piano-loop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 81C38B002DDFEE68008BDC67 /* piano-loop.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		81C38AD22DDEB125008BDC67 /* paper-rip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "paper-rip.wav"; sourceTree = "<group>"; };
 		81C38AD42DDEB1C3008BDC67 /* cat-purring.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "cat-purring.wav"; sourceTree = "<group>"; };
 		81C38AD52DDEB1C3008BDC67 /* cow-mooing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "cow-mooing.mp3"; sourceTree = "<group>"; };
+		81C38AFB2DDFEC9F008BDC67 /* BackgroundAudioProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAudioProvider.swift; sourceTree = "<group>"; };
+		81C38AFE2DDFED0C008BDC67 /* jazzy-guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "jazzy-guitar.wav"; sourceTree = "<group>"; };
+		81C38B002DDFEE68008BDC67 /* piano-loop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "piano-loop.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,10 +78,12 @@
 			isa = PBXGroup;
 			children = (
 				81C38AC22DDEA8DF008BDC67 /* SoundExampleApp.swift */,
+				81C38AFA2DDFEC89008BDC67 /* Shared */,
 				81C38AC92DDEA926008BDC67 /* Model */,
 				81C38ACA2DDEA92D008BDC67 /* ViewModels */,
 				81C38AC82DDEA8E4008BDC67 /* Views */,
 				81C38ACF2DDEACCF008BDC67 /* Sounds */,
+				81C38AFD2DDFED00008BDC67 /* Loops */,
 				81C38ABF2DDEA8DF008BDC67 /* Preview Content */,
 				81C38AC02DDEA8DF008BDC67 /* Assets.xcassets */,
 			);
@@ -115,6 +123,23 @@
 				81C38AD02DDEACEC008BDC67 /* birds.wav */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		81C38AFA2DDFEC89008BDC67 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				81C38AFB2DDFEC9F008BDC67 /* BackgroundAudioProvider.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		81C38AFD2DDFED00008BDC67 /* Loops */ = {
+			isa = PBXGroup;
+			children = (
+				81C38B002DDFEE68008BDC67 /* piano-loop.wav */,
+				81C38AFE2DDFED0C008BDC67 /* jazzy-guitar.wav */,
+			);
+			path = Loops;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,7 +203,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81C38B012DDFEE68008BDC67 /* piano-loop.wav in Resources */,
 				81C38ADC2DDEB1C3008BDC67 /* cow-mooing.mp3 in Resources */,
+				81C38AFF2DDFED0C008BDC67 /* jazzy-guitar.wav in Resources */,
 				81C38ADD2DDEB1C3008BDC67 /* cat-purring.wav in Resources */,
 				81C38AC42DDEA8DF008BDC67 /* Preview Assets.xcassets in Resources */,
 				81C38AD32DDEB125008BDC67 /* paper-rip.wav in Resources */,
@@ -196,6 +223,7 @@
 			files = (
 				81C38ACC2DDEA94B008BDC67 /* SoundBoardViewModel.swift in Sources */,
 				81C38AC62DDEA8DF008BDC67 /* SoundBoardView.swift in Sources */,
+				81C38AFC2DDFEC9F008BDC67 /* BackgroundAudioProvider.swift in Sources */,
 				81C38AC72DDEA8DF008BDC67 /* SoundExampleApp.swift in Sources */,
 				81C38ACE2DDEAC97008BDC67 /* Sound.swift in Sources */,
 			);
