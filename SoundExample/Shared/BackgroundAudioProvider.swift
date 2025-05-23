@@ -16,6 +16,9 @@ class BackgroundAudioProvider: Observable {
     // What track to play right now
     var currentTrack: Sound
     
+    // Whether background audio is turned on or not
+    var isOn: Bool
+    
     // List of available background audio tracks (loopable)
     var tracks: [Sound]
     
@@ -27,6 +30,9 @@ class BackgroundAudioProvider: Observable {
             piano,
             guitar
         ]
+        
+        // Set background audio to play
+        self.isOn = true
         
         // Set a background audio file to start playing
         self.currentTrack = piano

@@ -31,6 +31,13 @@ struct SoundExampleApp: App {
         .onChange(of: backgroundAudioProvider.currentTrack) { oldSound, newSound in
             startPlaying(backgroundAudio: newSound)
         }
+        .onChange(of: backgroundAudioProvider.isOn) {
+            if backgroundAudioProvider.isOn == true {
+                backgroundAudioPlayer?.play()
+            } else {
+                backgroundAudioPlayer?.pause()
+            }
+        }
         .onChange(of: scenePhase) {
             switch scenePhase {
             case .active:

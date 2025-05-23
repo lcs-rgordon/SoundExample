@@ -17,6 +17,7 @@ struct SettingsView: View {
     // Controls whether this view is showing or not
     @Binding var isShowing: Bool
     
+    
     // MARK: Computed properties
     var body: some View {
         NavigationStack {
@@ -24,7 +25,10 @@ struct SettingsView: View {
             // Create a two-way binding to the BackgroundAudioProvider class
             @Bindable var backgroundAudioProviderBindable = backgroundAudioProvider
             
-            VStack {
+            VStack(spacing: 20) {
+                
+                Toggle("Play background audio", isOn: $backgroundAudioProviderBindable.isOn)
+
                 HStack {
                     
                     Text("Which track?")
@@ -38,9 +42,9 @@ struct SettingsView: View {
                     }
 
                 }
-                .padding(.horizontal)
                 
             }
+            .padding(.horizontal)
             .toolbar {
                 ToolbarItem {
                     Button("Done") {
@@ -49,6 +53,7 @@ struct SettingsView: View {
                 }
             }
             .navigationTitle("Settings")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
