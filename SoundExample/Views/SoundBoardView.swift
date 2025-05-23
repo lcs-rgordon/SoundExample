@@ -21,6 +21,9 @@ struct SoundBoardView: View {
     // What text should be shown for attributing the source of the current sound
     @State private var attribution = ""
     
+    // Whether the Settings view is showing
+    @State private var isShowingSettings = false
+    
     // MARK: Computed properties
     var body: some View {
         NavigationStack {
@@ -96,6 +99,20 @@ struct SoundBoardView: View {
                 .disabled(player == nil || player != nil && player!.isPlaying == false)
 
                 
+            }
+            .toolbar {
+                ToolbarItem {
+                    Button {
+                        isShowingSettings = true
+                    } label: {
+                        Image(systemName: "gear")
+                    }
+
+                }
+            }
+            .sheet(isPresented: $isShowingSettings) {
+                SettingsView(isShowing: $isShowingSettings)
+                    .presentationDetents([.fraction(0.25), .medium])
             }
             .navigationTitle("Sound Board")
         }

@@ -20,6 +20,7 @@
 		81C38AFC2DDFEC9F008BDC67 /* BackgroundAudioProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38AFB2DDFEC9F008BDC67 /* BackgroundAudioProvider.swift */; };
 		81C38AFF2DDFED0C008BDC67 /* jazzy-guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = 81C38AFE2DDFED0C008BDC67 /* jazzy-guitar.wav */; };
 		81C38B012DDFEE68008BDC67 /* piano-loop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 81C38B002DDFEE68008BDC67 /* piano-loop.wav */; };
+		81C38B032DDFF404008BDC67 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C38B022DDFF404008BDC67 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		81C38AFB2DDFEC9F008BDC67 /* BackgroundAudioProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAudioProvider.swift; sourceTree = "<group>"; };
 		81C38AFE2DDFED0C008BDC67 /* jazzy-guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "jazzy-guitar.wav"; sourceTree = "<group>"; };
 		81C38B002DDFEE68008BDC67 /* piano-loop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "piano-loop.wav"; sourceTree = "<group>"; };
+		81C38B022DDFF404008BDC67 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				81C38AC12DDEA8DF008BDC67 /* SoundBoardView.swift */,
+				81C38B022DDFF404008BDC67 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				81C38ACC2DDEA94B008BDC67 /* SoundBoardViewModel.swift in Sources */,
 				81C38AC62DDEA8DF008BDC67 /* SoundBoardView.swift in Sources */,
 				81C38AFC2DDFEC9F008BDC67 /* BackgroundAudioProvider.swift in Sources */,
+				81C38B032DDFF404008BDC67 /* SettingsView.swift in Sources */,
 				81C38AC72DDEA8DF008BDC67 /* SoundExampleApp.swift in Sources */,
 				81C38ACE2DDEAC97008BDC67 /* Sound.swift in Sources */,
 			);

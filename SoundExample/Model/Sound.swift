@@ -8,7 +8,7 @@
 import Foundation
 
 // Define a structure to describe a sound
-struct Sound: Identifiable, Equatable {
+struct Sound: Identifiable, Equatable, Hashable {
     
     // MARK: Stored properties
     let id = UUID()
